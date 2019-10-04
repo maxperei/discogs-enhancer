@@ -550,6 +550,33 @@ input[type="checkbox"]:focus {
   }
 }
 
+.track-preview-interface {
+  width: 300px;
+  position: absolute;
+  top: 52px;
+  left: 50px;
+  font-size: 15px;
+  color: var(--white);
+
+  input {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 0;
+    font-size: inherit;
+    border-radius: 5px;
+    border: 1px solid var(--select-border);
+    padding: 0.25rem;
+    width: 275px;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--text-color);
+    display: block;
+  }
+}
+
 .rep-color {
   width: 30px;
   height: 20px;
@@ -640,6 +667,10 @@ input[type="checkbox"]:focus {
 .percentage-interface input::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
+}
+
+.track-preview-interface {
+
 }
 
 .toggle-group.menus,

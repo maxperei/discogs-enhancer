@@ -57,6 +57,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
         sellerRepFilter: localStorage.getItem('sellerRepFilter'),
         sleeveCondition: localStorage.getItem('sleeveCondition'),
         usDateFormat: localStorage.getItem('usDateFormat'),
+        ytApiKey: localStorage.getItem('ytApiKey'),
       };
 
       for ( let p in userPreferences ) {

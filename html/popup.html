@@ -1310,6 +1310,44 @@
       </div> <!-- /.help -->
     </div>
 
+    <!-- Track preview YouTube -->
+    <div class="toggle-group track-preview has-options">
+      <p class="label" title="Click to display options">
+        <span class="arrow">&rsaquo;&nbsp;</span>
+        Track preview
+        <span class="status"></span>
+      </p>
+      <div class="meta hide">This add the ability to preview a track on click by launching a YouTube iframe.</div>
+
+      <div class="hide-track-preview hide">
+        <div class="onoffswitch hide-track-preview">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggleYtPreview" checked>
+          <label class="onoffswitch-label" for="toggleYtPreview">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+
+        <div class="help trackPreview">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle" color="#384047">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12" y2="17"></line>
+          </svg>
+          <div class="help-bubble">
+            <div class="help-text">
+              This add the possibility for any user to preview a track using YouTube API.
+            </div>
+            <div class="arrow-right stroke"></div><div class="arrow-right"></div>
+          </div>
+        </div> <!-- /.help -->
+        <div class="hide-track-preview track-preview-interface">
+          <label for="ytApiKey">Insert <a href="https://console.developers.google.com/apis/credentials" target="_blank">YouTube API Key</a> here</label>
+          <input type="text" name="ytApiKey" class="ytApiKey" id="ytApiKey">
+        </div>
+      </div>
+    </div>
+
     <!-- Tracklist readability -->
     <div class="toggle-group">
       <p class="label">Tracklist Readability</p>

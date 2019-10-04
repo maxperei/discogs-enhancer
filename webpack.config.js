@@ -113,6 +113,7 @@ module.exports = {
     [features + 'toggle-min-max-columns']: `${features}toggle-min-max-columns.js`,
     [features + 'toggle-youtube-playlists']: `${features}toggle-youtube-playlists.js`,
     [features + 'tracklist-readability-react']: `${features}tracklist-readability-react.js`,
+    [features + 'track-preview-youtube']: `${features}track-preview-youtube.js`,
     [features + 'tracklist-readability']: `${features}tracklist-readability.js`,
     [features + 'tweak-discriminators-react']: `${features}tweak-discriminators-react.js`,
     [features + 'tweak-discriminators']: `${features}tweak-discriminators.js`,

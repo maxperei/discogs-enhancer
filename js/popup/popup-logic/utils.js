@@ -76,6 +76,7 @@ export function applySave(message, event, currencyTarget = 'currency') {
         tweakDiscrims: document.getElementById('toggleTweakDiscrims').checked,
         userCurrency: document.getElementById(currencyTarget).value,
         ytPlaylists: document.getElementById('toggleYtPlaylists').checked,
+        ytPreview: document.getElementById('toggleYtPreview').checked,
 
         // Contextual menus
         useAllDay: document.getElementById('allday').checked,

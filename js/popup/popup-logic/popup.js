@@ -28,6 +28,7 @@ import * as sellerRep from './features/seller-rep.js';
 import * as suggestedPrices from './features/suggested-prices.js';
 import * as tweakDiscrims from './features/tweak-discriminators.js';
 import * as ytPlaylists from './features/youtube-playlists.js';
+import * as ytPreview from './features/youtube-preview.js';
 import { acknowledgeUpdate,
          optionsToggle,
          searchFeatures,
@@ -115,6 +116,7 @@ window.addEventListener('load', () => {
       toggleSortBtns = document.getElementById('toggleSortBtns'),
       toggleTweakDiscrims = document.getElementById('toggleTweakDiscrims'),
       toggleYtPlaylists = document.getElementById('toggleYtPlaylists'),
+      toggleYtPreview  = document.getElementById('toggleYtPreview'),
       userCurrency = document.getElementById('currency'),
 
       // Contextual menus
@@ -234,6 +236,10 @@ window.addEventListener('load', () => {
   // ========================================================
   inventoryScanner.init();
 
+  // Track Preview YouTube Options
+  // ========================================================
+  ytPreview.init();
+
   // Search Functionality
   // ========================================================
   searchbox.addEventListener('keydown', searchFeatures);
@@ -305,6 +311,7 @@ window.addEventListener('load', () => {
   toggleSortBtns.addEventListener('change', triggerSave);
   toggleTweakDiscrims.addEventListener('change', triggerSave);
   toggleYtPlaylists.addEventListener('change', ytPlaylists.toggleYtPlaylists);
+  toggleYtPreview.addEventListener('change', ytPreview.toggleYtPreview);
   userCurrency.addEventListener('change', () => applySave(null, event));
 
   /**
@@ -474,6 +481,7 @@ window.addEventListener('load', () => {
       toggleSortBtns.checked = result.prefs.sortButtons;
       toggleTweakDiscrims.checked = result.prefs.tweakDiscrims;
       toggleYtPlaylists.checked = result.prefs.ytPlaylists;
+      toggleYtPreview.checked = result.prefs.ytPreview;
 
       // Contextual menus
       toggleAllDay.checked = result.prefs.useAllDay;
@@ -505,6 +513,7 @@ window.addEventListener('load', () => {
     absoluteDate.setAbsoluteDateStatus();
     inventoryRatings.setInventoryRatings();
     inventoryScanner.setInventoryThreshold();
+    ytPreview.setYtPreview();
 
     setTimeout(() => {
       filterMediaCondition.setupFilterByCondition(toggleFilterMediaCondition.checked);

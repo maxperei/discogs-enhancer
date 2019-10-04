@@ -189,6 +189,8 @@ appendFragment([resourceLibrary]).then(() => {
         tweakDiscrims: false,
         userCurrency: null,
         ytPlaylists: false,
+        ytPreview: false,
+        ytApiKey: null,
         //
         useAllDay: false,
         useBandcamp: false,
@@ -1072,6 +1074,17 @@ appendFragment([resourceLibrary]).then(() => {
         tweakDiscrimsReact.className = 'de-init';
 
         elems.push(tweakDiscrimsReact);
+      }
+
+      if ( result.prefs.ytPreview ) {
+
+        let featureName = document.createElement('script');
+
+        featureName.type = 'text/javascript';
+        featureName.src = chrome.extension.getURL('js/extension/features/track-preview-youtube.js');
+        featureName.className = 'de-init';
+
+        elems.push(featureName);
       }
 
       // unit-tests.js

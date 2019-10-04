@@ -37,7 +37,8 @@
   "permissions": [
     "*://*.discogs.com/*",
     "storage",
-    "contextMenus"
+    "contextMenus",
+    "notifications"
   ],
   "web_accessible_resources": [
     "css/baoi-fields.css",
@@ -128,6 +129,8 @@
     "js/extension/features/text-format-shortcuts-react.js",
     "js/extension/features/text-format-shortcuts.js",
     "js/extension/features/tracklist-readability-react.js",
+    "js/extension/features/show-actual-dates.js",
+    "js/extension/features/track-preview-youtube.js",
     "js/extension/features/tracklist-readability.js",
     "js/extension/features/tweak-discriminators-react.js",
     "js/extension/features/tweak-discriminators.js"
