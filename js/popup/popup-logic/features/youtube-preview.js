@@ -2,7 +2,7 @@
  * YouTube preview popup logic
  */
 
-import {applySave, optionsToggle, setEnabledStatus} from '../utils';
+import { applySave, optionsToggle, setEnabledStatus } from '../utils';
 
 // ========================================================
 // toggleYtPreview
